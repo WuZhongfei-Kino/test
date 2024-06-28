@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+
+apple: ##苹果
+  id: 1
+  name: apple
+  price: 8
+
+strawberry: ##草莓
+  id: 2
+  name: strawberry
+  price: 13
+
+mango: ##芒果
+  id: 3
+  name: mango
+  price: 20
+
+###视图解析器
+#
+#spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/view/   #前缀
+#      suffix: .jsp  #后缀
