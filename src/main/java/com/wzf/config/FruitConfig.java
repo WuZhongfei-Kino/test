@@ -1,22 +1,16 @@
 package com.wzf.config;
 
 import com.wzf.model.Fruit;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 @Configuration
 public class FruitConfig {
 
-    private Environment environment;
-
 
     public List<Fruit> getFruitList(Environment environment){
-        this.environment = environment;
         List<Fruit> fruitList = new ArrayList<>();
         //初始化水果信息
         Fruit fruit = new Fruit();
